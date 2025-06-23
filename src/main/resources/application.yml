@@ -1,0 +1,14 @@
+server:
+  port: 10047
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.11.129:1521/XEPDB1
+    username: system
+    password: '@102708Ab'
+    driver-class-name: oracle.jdbc.OracleDriver
+mybatis:
+  mapper-locations: classpath:mapper/StudyMapper.xml, classpath:mapper/aiMapper.xml
+  type-aliases-package: com.jstory.study.vo, com.jstory.ai.vo
+error:
+  whitelabel:
+    enabled: false
